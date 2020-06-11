@@ -1,8 +1,6 @@
 package com.bootcamp.ujian.model;
 
 import com.bootcamp.ujian.application.AppController;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
 import com.raizlabs.android.dbflow.annotation.Column;
 import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
@@ -23,10 +21,9 @@ public class Data extends BaseModel {
     @Column
     private String alamat;
 
-    public Data(){
+    public Data() {
 
     }
-
 
 
     public String getNama() {

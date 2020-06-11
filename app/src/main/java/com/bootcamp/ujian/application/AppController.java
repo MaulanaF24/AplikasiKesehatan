@@ -39,24 +39,25 @@ public class AppController extends Application {
     private static AppController singleton;
 
 
-
     @Override
     public void onCreate() {
         super.onCreate();
         FlowManager.init(new FlowConfig.Builder(this).build());
 
 
-
     }
 
 
-    public static AppController getInstance(){
+    public static AppController getInstance() {
         return singleton;
     }
+
     Handler lochandler;
-    public Handler getLocationHandler(){
+
+    public Handler getLocationHandler() {
         return lochandler;
     }
+
     Handler currhandler;
 
 }

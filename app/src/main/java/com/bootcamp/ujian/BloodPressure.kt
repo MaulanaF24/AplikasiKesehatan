@@ -77,7 +77,7 @@ class BloodPressure : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     private fun onBpm(bpm: HeartRateOmeter.Bpm) {
         // Log.v("HeartRateOmeter", "[onBpm] $bpm")
-        label.text = "$bpm bpm"
+        label.text = "${bpm.value} bpm"
         btnCek.setOnClickListener(View.OnClickListener {
             val changePage = Intent (this, InputActivity::class.java)
             changePage.putExtra("Bpm",label.text.toString())
